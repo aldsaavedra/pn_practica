@@ -1,0 +1,139 @@
+    1  ps -fea
+    2  ls -l
+    3  sudo apt update
+    4  sudo apt upgrade
+    5  pwd
+    6  curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+    7  unzip awscliv2.zip
+    8  sudo apt install unzip
+    9  unzip awscliv2.zip 
+   10  sudo ./aws/install
+   11  aws --version
+   12  ls -l
+   13  aws --version
+   14  sudo apt-get update
+   15  passwd asaavedra
+   16  mount -o remount,rw /
+   17  sudo apt-get update
+   18  sudo apt-get install ca-certificates curl apt-transport-https lsb-release gnupg
+   19  curl -sL https://packages.microsoft.com/keys/microsoft.asc |     gpg --dearmor |     sudo tee /etc/apt/trusted.gpg.d/microsoft.gpg > /dev/null
+   20  AZ_REPO=$(lsb_release -cs)
+   21  echo "deb [arch=amd64] https://packages.microsoft.com/repos/azure-cli/ $AZ_REPO main" |     sudo tee /etc/apt/sources.list.d/azure-cli.list
+   22  sudo apt-get update
+   23  sudo apt-get install azure-cli
+   24  az --version
+   25  cd ~
+   26  pwd
+   27  wget -O- https://apt.releases.hashicorp.com/gpg |     gpg --dearmor |     sudo tee /usr/share/keyrings/hashicorp-archive-keyring.gpg
+   28  terraform --version
+   29  wget -O- https://apt.releases.hashicorp.com/gpg |     gpg --dearmor |     sudo tee /usr/share/keyrings/hashicorp-archive-keyring.gpg
+   30  gpg --no-default-keyring     --keyring /usr/share/keyrings/hashicorp-archive-keyring.gpg     --fingerprint
+   31  echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] \
+   32      https://apt.releases.hashicorp.com $(lsb_release -cs) main" |     sudo tee /etc/apt/sources.list.d/hashicorp.list
+   33  sudo apt update
+   34  sudo apt install terraform
+   35  terraform --version
+   36  git --version
+   37  git clone git@github.com:aldsaavedra/pn_practica.git
+   38  cd ~/.ssh/
+   39  ls
+   40  ll
+   41  ls -al ~/.ssh
+   42  ssh-keygen -t ed25519 -C "aldemar.saavedra@u.icesi.edu.co"
+   43  ls -al ~/.ssh
+   44  eval "$(ssh-agent -s)"
+   45  clear
+   46  ls -al ~/.ssh
+   47  cat ~/.ssh/id_ed25519.pub
+   48  git clone git@github.com:aldsaavedra/pn_practica.git
+   49  ll
+   50  cd /mnt
+   51  ll
+   52  cd c
+   53  ll
+   54  cd Users
+   55  ll
+   56  cd 'Aldemar Saavedra'
+   57  ll
+   58  cd github
+   59  mv ~/.ssh/pn_practica/ pn_practica
+   60  ll
+   61  cd pn_practica/
+   62  git status
+   63  ll
+   64  git pull
+   65  ll
+   66  git add .
+   67  ll
+   68  git status
+   69  git commit
+   70  git config --global user.email "aldemar.saavedra@u.icesi.edu.co"
+   71  git config --global user.name "asaavedra"
+   72  git commit
+   73  git log
+   74  git push
+   75  sha256sum archivo_online.txt 
+   76  sha256sum archivo_online.txt >> archivo_huellas.txt
+   77  cat archivo_huellas.txt 
+   78  sha256sum README.md >> archivo_huellas.txt
+   79  cat archivo_huellas.txt 
+   80  git status
+   81  git add archivo_huellas.txt
+   82  git status
+   83  git commit
+   84  git log
+   85  git push
+   86  git log
+   87  git branch
+   88  git checkout -b feature/new_folder
+   89  git branch
+   90  git checkout main
+   91  git branch
+   92  git status
+   93  ll
+   94  mkdir feature
+   95  cd feature/
+   96  ll
+   97  top
+   98  clear
+   99  top >> top_file.txt
+  100  ll
+  101  top >> top_file.txt
+  102  ll
+  103  df
+  104  df >> df_file.txt
+  105  ll
+  106  cd ..
+  107  git status
+  108  git add feature/
+  109  git status
+  110  ll
+  111  git checkout main
+  112  git status
+  113  git checkout feature/new_folder
+  114  git status
+  115  git commit -m "twice file with content"
+  116  git checkout main
+  117  ll
+  118  git tag -a v1.0.0-RC -m "Version candidata para desplegar"
+  119  git log
+  120  git push --tags
+  121  git branch
+  122  git checout feature/new_folder
+  123  git checkout feature/new_folder
+  124  git status
+  125  git push
+  126  git push --set-upstream origin feature/new_folder
+  127  git status
+  128  git branch
+  129  git checkout main
+  130  git branch
+  131  git pull
+  132  ll
+  133  git merge feature/new_folder
+  134  ll
+  135  git status
+  136  git log
+  137  git push
+  138  git logx
+  139  history >> comandos_clase.txt
